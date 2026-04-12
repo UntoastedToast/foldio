@@ -51,7 +51,7 @@
     <string name="update_successful">Kortet har uppdaterats</string>
     <string name="update_failed">Kortuppdateringen misslyckades</string>
     <string name="made_with_love">Tillverkad med ❤ i Tyskland</string>
-    <string name="permission_rationale">Utan behörigheten/behörigheterna fungerar FossWallet inte korrekt</string>
+    <string name="permission_rationale">Utan behörigheten/behörigheterna fungerar Foldio inte korrekt</string>
     <string name="no_barcode_format_given">Inget streckkodsformat har angetts! Standardinställningen är QR-kod. Denna kod skannas kanske inte korrekt.</string>
     <string name="invalid_pass_toast">Kortet kunde inte laddas. Är du säker på att detta är ett giltigt .pkpass?</string>
     <string name="sync_interval">Kortuppdateringsintervall (min)</string>

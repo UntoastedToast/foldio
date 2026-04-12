@@ -3,7 +3,7 @@
     <string name="settings">Ρυθμίσεις</string>
     <string name="update">Ενημέρωση</string>
     <string name="back">Πίσω</string>
-    <string name="permission_rationale">Χωρίς τις απαραίτητες άδειες, η λειτουργία του FossWallet είναι περιορισμένη</string>
+    <string name="permission_rationale">Χωρίς τις απαραίτητες άδειες, η λειτουργία του Foldio είναι περιορισμένη</string>
     <string name="request_permissions">Αίτημα Άδειας</string>
     <string name="image">Εικόνα</string>
     <string name="pass">Πάσο</string>

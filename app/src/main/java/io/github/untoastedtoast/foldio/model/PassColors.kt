@@ -1,0 +1,12 @@
+package io.github.untoastedtoast.foldio.model
+
+import androidx.compose.material3.CardColors
+import androidx.compose.ui.graphics.Color
+
+data class PassColors(
+    val background: Color,
+    val foreground: Color,
+    val label: Color,
+) {
+    fun toCardColors(): CardColors = CardColors(background, foreground, background.copy(alpha = 0.38f), foreground.copy(alpha = 0.38f))
+}

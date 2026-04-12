@@ -5,50 +5,41 @@
 >
 > [**Keep Android Open**](https://keepandroidopen.org/).
 
-# <img alt="Logo" src="app/src/main/icon-source.svg" width="40" height="40"/> FossWallet
+# <img alt="Logo" src="https://raw.githubusercontent.com/untoastedtoast/foldio/main/app/src/main/icon-source.svg" width="40" height="40"/> Foldio Wallet
 
-FossWallet is a free and open source (FOSS) .pkpass application.
-Inspired by the venerable [PassAndroid](https://github.com/ligi/PassAndroid) app,
-I tried to recreate the necessary functionality in Material Design 3 and with modern
-technologies.
+Foldio is a free and open source (FOSS) .pkpass application. It is a fork of [FossWallet](https://github.com/SeineEloquenz/fosswallet) with the goal of bringing a more modern look and additional power-user features.
 
-Features (non-exhaustive):
-* Store, create, download and share passes (.pkpass/.pkpasses)
-* Display pass information and barcodes
-* Manual pass updates
-* Optional automatic pass updates (pull-based, with notifications)
-* Home screen shortcuts
-* Pass display over lock screen
-* Per-app language support
-* Import/export to .pkpasses
-* Compatibility mode for legacy scanners
-* Multiple sort options (incl. by date)
-* Attach tags to passes
+Foldio implements **Material Design 3 Expressive**, providing a vibrant and adaptive user interface that feels right at home on modern Android devices.
+
+Features:
+* **PDF Ticket Import**: Import your PDF tickets directly; Foldio will extract the relevant information for you.
+* **Modern UI**: Fully embraces Material Design 3 Expressive for a beautiful, responsive experience.
+* **Full .pkpass Support**: Store, create, download and share passes (.pkpass/.pkpasses).
+* **Smart Updates**: Manual and optional automatic (pull-based) pass updates with notifications.
+* **System Integration**: Home screen shortcuts and pass display over the lock screen.
+* **Privacy Focused**: No tracking, no ads, completely open source.
+* **Advanced Management**: Attach tags, multiple sort options, and compatibility mode for legacy scanners.
+* **Import/Export**: Easily move your wallet between devices using .pkpasses files.
 
 ## Installation
 
 [<img src="https://raw.githubusercontent.com/SeineEloquenz/fosswallet/refs/heads/main/.github/badges/github.png"
 alt="Get it on GitHub"
-height="80">](https://github.com/SeineEloquenz/fosswallet/releases)
+height="80">](https://github.com/untoastedtoast/foldio/releases)
 [<img src="https://raw.githubusercontent.com/SeineEloquenz/fosswallet/refs/heads/main/.github/badges/fdroid.png"
 alt="Get it on F-Droid"
-height="80">](https://f-droid.org/packages/nz.eloque.foss_wallet/)
-[<img src="https://raw.githubusercontent.com/SeineEloquenz/fosswallet/refs/heads/main/.github/badges/play.png"
-alt="Get it on Google Play"
-height="80">](https://play.google.com/store/apps/details?id=nz.eloque.foss_wallet)
+height="80">](https://f-droid.org/packages/io.github.untoastedtoast.foldio/)
 
 ### Verification
-To verify the authenticity of a FossWallet APK, use the following SHA-256 fingerprint:
-
+To verify the authenticity of a Foldio APK, use the following SHA-256 fingerprint:
 
 `BF:8A:F6:D8:9E:55:95:D9:5F:4D:22:9E:C0:FD:97:1A:3C:75:2F:DB:AB:E8:33:77:23:0E:F9:2C:70:44:43:05`
 
-> [!NOTE]
-> The Google Play releases are signed by Google and use a different signing key.
-> Prefer using builds from GitHub or F-Droid if possible.
+## Credits
+Foldio is based on the excellent work of [FossWallet](https://github.com/SeineEloquenz/fosswallet) and was inspired by the original [PassAndroid](https://github.com/ligi/PassAndroid) app.
 
 ## Translations
-FossWallet can be translated via [Weblate](https://hosted.weblate.org/projects/fosswallet/app/).
+Foldio can be translated via [Weblate](https://hosted.weblate.org/projects/fosswallet/app/).
 
 [![Translation status](https://hosted.weblate.org/widget/fosswallet/app/multi-auto.svg)](https://hosted.weblate.org/engage/fosswallet/)
 

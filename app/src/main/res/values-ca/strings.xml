@@ -3,7 +3,7 @@
     <string name="settings">Paràmetres</string>
     <string name="update">Actualizar</string>
     <string name="back">Enrera</string>
-    <string name="permission_rationale">Sense permís(os), FossWallet no funciona correctament</string>
+    <string name="permission_rationale">Sense permís(os), Foldio no funciona correctament</string>
     <string name="request_permissions">Demanar Permisos</string>
     <string name="image">Imatge</string>
     <string name="barcode">Codi de barres</string>
@@ -23,7 +23,7 @@
     <string name="privacy">Privacitat</string>
     <string name="details">Detalls</string>
     <string name="copy">Copiar</string>
-    <string name="open">Obrir FossWallet</string>
+    <string name="open">Obrir Foldio</string>
     <string name="coupon">Cupó</string>
     <string name="color">Color</string>
     <string name="boarding_pass">Targeta d\'embarcament</string>

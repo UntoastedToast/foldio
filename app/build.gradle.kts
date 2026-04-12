@@ -34,7 +34,7 @@ android {
             keyAlias = System.getenv("SIGNING_KEY_ALIAS")
         }
     }
-    namespace = "nz.eloque.foss_wallet"
+    namespace = "io.github.untoastedtoast.foldio"
     compileSdk = 36
 
     buildFeatures {
@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "nz.eloque.foss_wallet"
+        applicationId = "io.github.untoastedtoast.foldio"
         minSdk = 28
         targetSdk = 36
         versionCode = 103

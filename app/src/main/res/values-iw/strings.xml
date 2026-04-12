@@ -2,7 +2,7 @@
 <resources>
     <string name="settings">הגדרות</string>
     <string name="back">אחורה</string>
-    <string name="permission_rationale">ללא הרשאות, FossWallet לא עובד כראוי</string>
+    <string name="permission_rationale">ללא הרשאות, Foldio לא עובד כראוי</string>
     <string name="request_permissions">נא לבקש אישור</string>
     <string name="image">תמונה</string>
     <string name="barcode">ברקוד</string>

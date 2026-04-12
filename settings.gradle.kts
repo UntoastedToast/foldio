@@ -28,5 +28,5 @@ buildCache {
     }
 }
 
-rootProject.name = "FossWallet"
+rootProject.name = "Foldio"
 include(":app")

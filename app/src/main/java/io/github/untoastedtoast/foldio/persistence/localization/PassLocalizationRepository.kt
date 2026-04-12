@@ -1,0 +1,20 @@
+package io.github.untoastedtoast.foldio.persistence.localization
+
+import jakarta.inject.Inject
+import kotlinx.coroutines.flow.Flow
+import io.github.untoastedtoast.foldio.model.PassLocalization
+
+class PassLocalizationRepository
+    @Inject
+    constructor(
+        private val localizationDao: PassLocalizationDao,
+    ) {
+        fun all(): Flow<List<PassLocalization>> = localizationDao.all()
+
+        fun byPassId(
+            passId: Int,
+            lang: String,
+        ): Set<PassLocalization> = localizationDao.byPassId(passId, lang).toSet()
+
+        fun insert(localization: PassLocalization): Long = localizationDao.insert(localization)
+    }

@@ -47,7 +47,7 @@
     <string name="status_not_updated">Jūsu caurlaide jau ir atjaunināta</string>
     <string name="barcode_position">Svītrkoda pozīcija, kad pilnekrānā</string>
     <string name="pass_already_imported">Caurlaide jau ievietota</string>
-    <string name="permission_rationale">Bez šīs(-m) atļaujas(-ām) FossWallet nedarbosies korekti</string>
+    <string name="permission_rationale">Bez šīs(-m) atļaujas(-ām) Foldio nedarbosies korekti</string>
     <string name="organization">Organizācija</string>
     <string name="no_barcode_format_given">Nav norādīts svītrkoda formāts! Izmanto QR kodu. Iespējams, ka šis kods var tikt nepareizi nolasīts.</string>
     <string name="color">Krāsa</string>

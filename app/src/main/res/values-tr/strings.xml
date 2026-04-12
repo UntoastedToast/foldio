@@ -3,7 +3,7 @@
     <string name="settings">Ayarlar</string>
     <string name="update">Güncelle</string>
     <string name="back">Geri</string>
-    <string name="permission_rationale">İzinler olmadan FossWallet düzgün çalışmaz</string>
+    <string name="permission_rationale">İzinler olmadan Foldio düzgün çalışmaz</string>
     <string name="request_permissions">İzin Talebi</string>
     <string name="wallet">Cüzdan</string>
     <string name="barcode">Barkod</string>

@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.FossWallet" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Foldio" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.FossWallet.NoActionBar" parent="Theme.FossWallet">
+    <style name="Theme.Foldio.NoActionBar" parent="Theme.Foldio">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
