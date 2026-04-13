@@ -1,12 +1,10 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
 package io.github.untoastedtoast.foldio.ui
 
 import androidx.annotation.StringRes
 import androidx.compose.animation.AnimatedContentTransitionScope.SlideDirection
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.spring
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,7 +20,9 @@ import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Wallet
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
@@ -33,6 +33,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.IntOffset
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -97,6 +98,7 @@ fun WalletApp(
     walletViewModel: WalletViewModel = viewModel(),
     settingsViewModel: SettingsViewModel = viewModel(),
 ) {
+    val spatialSpec = MaterialTheme.motionScheme.defaultSpatialSpec<IntOffset>()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
     val topLevelRoutes = Screen.topLevelScreens.map { it.route }
@@ -141,25 +143,25 @@ fun WalletApp(
                 enterTransition = {
                     slideIntoContainer(
                         SlideDirection.Start,
-                        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMedium),
+                        spatialSpec,
                     )
                 },
                 exitTransition = {
                     slideOutOfContainer(
                         SlideDirection.Start,
-                        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMedium),
+                        spatialSpec,
                     )
                 },
                 popEnterTransition = {
                     slideIntoContainer(
                         SlideDirection.End,
-                        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMedium),
+                        spatialSpec,
                     )
                 },
                 popExitTransition = {
                     slideOutOfContainer(
                         SlideDirection.End,
-                        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMedium),
+                        spatialSpec,
                     )
                 },
             ) {

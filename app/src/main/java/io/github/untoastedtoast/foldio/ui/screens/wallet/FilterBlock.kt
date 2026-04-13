@@ -1,7 +1,8 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package io.github.untoastedtoast.foldio.ui.screens.wallet
 
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandVertically
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -15,8 +16,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
@@ -28,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import io.github.untoastedtoast.foldio.R
 import io.github.untoastedtoast.foldio.model.PassType
@@ -48,6 +52,8 @@ fun FilterBlock(
     tagToFilterFor: MutableState<Tag?>,
 ) {
     val resources = LocalResources.current
+    val effectsSizeSpec = MaterialTheme.motionScheme.defaultEffectsSpec<IntSize>()
+    val effectsFloatSpec = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
 
     var filtersShown by remember { mutableStateOf(false) }
 
@@ -86,12 +92,12 @@ fun FilterBlock(
             visible = filtersShown,
             enter =
                 expandVertically(
-                    animationSpec = tween(durationMillis = 300),
-                ) + fadeIn(animationSpec = tween(300)),
+                    animationSpec = effectsSizeSpec,
+                ) + fadeIn(animationSpec = effectsFloatSpec),
             exit =
                 shrinkVertically(
-                    animationSpec = tween(durationMillis = 300),
-                ) + fadeOut(animationSpec = tween(300)),
+                    animationSpec = effectsSizeSpec,
+                ) + fadeOut(animationSpec = effectsFloatSpec),
         ) {
             Column(
                 verticalArrangement = Arrangement.Center,

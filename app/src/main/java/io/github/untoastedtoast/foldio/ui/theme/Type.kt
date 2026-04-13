@@ -2,14 +2,27 @@ package io.github.untoastedtoast.foldio.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import io.github.untoastedtoast.foldio.R
 
-// TODO: Replace FontFamily.Default with a downloadable or bundled font for a more
-// expressive look. Example: add res/font/outfit.xml as a downloadable Google Font.
-private val DisplayFont = FontFamily.Default
-private val BodyFont = FontFamily.Default
+private val InterFont =
+    FontFamily(
+        Font(R.font.inter_variable, weight = FontWeight.Normal),
+        Font(R.font.inter_variable, weight = FontWeight.Medium),
+        Font(R.font.inter_variable, weight = FontWeight.SemiBold),
+        Font(R.font.inter_variable, weight = FontWeight.Bold),
+        Font(R.font.inter_variable_italic, weight = FontWeight.Normal, style = FontStyle.Italic),
+        Font(R.font.inter_variable_italic, weight = FontWeight.Medium, style = FontStyle.Italic),
+        Font(R.font.inter_variable_italic, weight = FontWeight.SemiBold, style = FontStyle.Italic),
+        Font(R.font.inter_variable_italic, weight = FontWeight.Bold, style = FontStyle.Italic),
+    )
+
+private val DisplayFont = InterFont
+private val BodyFont = InterFont
 
 val Typography =
     Typography(
